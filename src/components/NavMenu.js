@@ -9,7 +9,8 @@ const NavMenu = () => {
     { label: 'Usuários', href: '/users' },
     { label: 'Adicionar Usuário', href: '/add-user' },
     { label: 'Minhas Listas', href: '/lists' },
-    { label: 'Minha Conta', href: '/minha-conta' }
+    { label: 'Minha Conta', href: '/minha-conta' }, 
+    { label: 'Login', href: '/login' }
   ];
 
   return (

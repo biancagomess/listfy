@@ -1,10 +1,16 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Teste",
       "email": "teste@teste.com",
       "password": "123456"
+    },
+    {
+      "id": 2,
+      "name": "bi",
+      "email": "bi@gmail.com",
+      "password": "123"
     }
   ],
   "itens": [],
@@ -29,6 +35,6 @@
       "id": "5",
       "nome": "Móveis"
     }
-  ], 
-  "lists":[]
+  ],
+  "lists": []
 }
