@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
 import './Login.css';
+import Button from '../components/Button';
 
 
 const Login = () => {
@@ -37,17 +38,21 @@ const Login = () => {
                     <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
                     <input type="password" placeholder="Senha" value={password} onChange={(e) => setPassword(e.target.value)} />
                     <div className="button-group">
-                        <button type="submit">Entrar</button>
-                        <button
+                        <Button label="Voltar" color="danger" size="small" onClick={handleCancel} />
+                        <Button label="Entrar" color="listfybtn" size="listfybtn" type={"submit"} />
+                        {/* <button type="submit">Entrar</button> */}
+                        {/* <button
                             type="button"
                             className="cancel-button"
                             onClick={handleCancel}
                         >
                             Voltar
-                        </button>
+                        </button> */}
+
                     </div>
 
                 </form>
+                <span>Não possui conta - Registre-se</span>
             </div>
         </div >
     );

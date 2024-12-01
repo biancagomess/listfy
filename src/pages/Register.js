@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import api from '../services/api';
 import { useNavigate } from 'react-router-dom';
 import './Register.css'
+import Button from '../components/Button';
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -16,7 +17,6 @@ const Register = () => {
       alert('Usuário cadastrado com sucesso!');
       window.location.href = '/';
     } catch (error) {
-      console.error(error);
       alert('Erro ao cadastrar usuário.');
     }
   };
@@ -34,14 +34,16 @@ const Register = () => {
           <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
           <input type="password" placeholder="Senha" value={password} onChange={(e) => setPassword(e.target.value)} />
           <div className="button-group">
-            <button type="submit">Cadastrar</button>
-            <button
+            <Button label="Voltar" color="danger" size="small" onClick={handleCancel} />
+            <Button label="Cadastrar" color="listfybtn" size="listfybtn" type={"submit"} />
+            {/* <button type="submit">Cadastrar</button> */}
+            {/* <button
               type="button"
               className="cancel-button"
               onClick={handleCancel}
             >
               Voltar
-            </button>
+              </button> */}
           </div>
         </form>
       </div>

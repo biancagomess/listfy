@@ -22,7 +22,7 @@ const CadastroLista = () => {
     <div className='initial'>
       <div className="container">
         <div className='box'>
-          <h2>Cadastrar Lista</h2>
+          <h2>Adicionar Lista</h2>
           <form onSubmit={handleSubmit} id="grocery">
 
             <input
@@ -33,7 +33,7 @@ const CadastroLista = () => {
               id="writelist"
               placeholder="Digite o nome da Lista"
             />
-            <button type="submit">Cadastrar</button>
+            <button type="submit">Adicionar</button>
           </form>
         </div>
       </div>

@@ -39,20 +39,6 @@ label {
     flex-grow: 1;
 }
 
-.concluir-btn {
-    background-color: #365315;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.concluir-btn:hover {
-    background-color: #365315;
-}
-
 
 @media (max-width: 600px) {
     .listar-categorias-container {

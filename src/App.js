@@ -12,9 +12,8 @@ import Listas from './pages/Listas';
 import LoginPage from './pages/Login';
 import Register from './pages/Register';
 import ListarItens from './pages/ListarItens';
-import Categorias from  './pages/ListarCategorias'
-
-
+import Categorias from  './pages/ListarCategorias';
+import ListarUsers from './pages/ListarUsers';
 
 
 function App() {
@@ -32,6 +31,8 @@ function App() {
         <Route path="/items/:listaId" element={<><NavMenu /><ListarItens /><Footer /></>} />
         <Route path="/categorias" element={<><NavMenu /><Categorias /><Footer /></>} />
         <Route path="/cadastro-categoria" element={<><NavMenu /><CadastroCategoria /><Footer /></>} />
+        <Route path="/usuarios" element={<><NavMenu/> <ListarUsers/><Footer /></>}/>
+        <Route path="/cadastro-usuario" element={<><NavMenu /><Register /><Footer /></>} />
         {/* <Route path="/editar-categoria" element={<><NavMenu /><EditarCategoria /><Footer /></>} /> */}
       </Routes>
     </Router>

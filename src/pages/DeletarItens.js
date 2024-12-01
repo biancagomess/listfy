@@ -1,5 +1,6 @@
 import React from 'react';
 import api from '../services/api';
+import Button from '../components/Button';
 
 const DeleteItem = ({ itemId }) => {
     const handleDelete = async () => {
@@ -13,7 +14,8 @@ const DeleteItem = ({ itemId }) => {
     };
 
     return (
-        <button onClick={handleDelete}>Deletar Item</button>
+       
+        <Button label="Deletar item" color="danger" size="small" onClick={() => onClick={handleDelete}} />
     );
 };
 

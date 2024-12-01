@@ -21,10 +21,10 @@ const CadastroCategoria = () => {
     <div className='initial-category'>
       <div className="container-category">
         <div className='box-category'>
-          <h1>Cadastrar Categoria</h1>
+          <h1>Adicionar Categoria</h1>
           <form onSubmit={handleCadastro} id="category">
             <input type="text" placeholder="Digite uma categoria" value={nome} onChange={(e) => setNome(e.target.value) } id="writeCategory" />
-            <button type="submit">Cadastrar</button>
+            <button type="submit">Adicionar</button>
           </form>
         </div>
       </div>

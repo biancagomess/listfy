@@ -48,14 +48,14 @@ body{
     border: none;
     cursor: pointer;
     font-size: 15px;
-    letter-spacing: 6px;
+    /* letter-spacing: 2px; */
     border-radius: 9999px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .login-container button:hover {
-    background-color: #365315;
+    background-color: #4e7a1b;
 }
 
 .button-group {
@@ -76,3 +76,4 @@ body{
 .cancel-button:hover {
     background-color: #50c5b7 !important;
 }
+

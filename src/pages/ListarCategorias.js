@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import api from '../services/api';
 import "./ListarCategorias.css";
-
+import Button from '../components/Button';
 const ListarCategorias = () => {
   const [categorias, setCategorias] = useState([]);
   const [listaId, setListaId] = useState(1);
@@ -39,12 +39,7 @@ const ListarCategorias = () => {
                 {categoria.nome}
               </span>
             </label>
-            <button
-              className="concluir-btn"
-              onClick={() => handleDeletar(categoria.id)}
-            >
-              Deletar
-            </button>
+            <Button label="Deletar" color="danger" size="small" onClick={() => handleDeletar(categoria.id)} />
           </li>
         ))}
       </ul>

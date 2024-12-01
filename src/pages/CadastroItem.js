@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import api from '../services/api';
 import "./CadastroItem.css"
+import Button from '../components/Button';
 
 const CadastroItem = () => {
     const [nome, setNome] = useState('');
@@ -46,8 +47,8 @@ const CadastroItem = () => {
             <div className="container">
                 <div className='box'>
                     <form onSubmit={handleSubmit} id='itens'>
-                        <h1>Cadastrar Item</h1>
-                        <input type="text" placeholder="Digite o nome do item" value={nome} onChange={(e) => setNome(e.target.value)} />
+                        <h1>Adicionar Item</h1>
+                        <input type="text" placeholder="Digite o nome item" value={nome} onChange={(e) => setNome(e.target.value)} />
                         <select value={listaId} onChange={(e) => setListaId(e.target.value)}>
                             <option value="">Selecione uma lista</option>
                             {listas.map((lista) => (
@@ -60,7 +61,9 @@ const CadastroItem = () => {
                                 <option key={categoria.id} value={categoria.id}>{categoria.nome}</option>
                             ))}
                         </select>
-                        <button type="submit">Cadastrar</button>
+                        <button type="submit">Adicionar</button>
+                        {/* Preciso verificar a chamada da função no botão e confirmar o forms */}
+                        {/* <Button label="Cadastrar" color="primary" size="small" onClick={() => handleSubmit()} /> */}
                     </form>
                 </div>
             </div>

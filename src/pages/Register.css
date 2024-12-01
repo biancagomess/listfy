@@ -23,7 +23,7 @@
     font-size: 25px;
     margin-bottom: 20px;
     color: #273523;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
 }
 
 .register-container input[type="text"],
@@ -47,7 +47,7 @@
     border: none;
     cursor: pointer;
     font-size: 15px;
-    letter-spacing: 6px;
+    /* letter-spacing: 6px; */
     border-radius: 9999px;
     margin-top: 20px;
     margin-bottom: 20px;

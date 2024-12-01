@@ -31,8 +31,8 @@ const NavMenu = () => {
           Listas
           {showListas && (
             <ul className="dropdown">
-              <li><Link to="/listas">Ver listas</Link></li>
-              <li><Link to="/cadastro-lista">Cadastrar uma lista</Link></li>
+              <li><Link to="/listas">Minhas listas</Link></li>
+              <li><Link to="/cadastro-lista">Adicionar lista</Link></li>
               {/* <li><Link to="/editar-lista">Editar a lista</Link></li> */}
             </ul>
           )}
@@ -41,8 +41,8 @@ const NavMenu = () => {
           Itens
           {showItens && (
             <ul className="dropdown">
-              <li><Link to="/items/">Ver itens</Link></li>
-              <li><Link to="/cadastro-item">Cadastrar um item</Link></li>
+              <li><Link to="/items/1">Meus itens</Link></li>
+              <li><Link to="/cadastro-item">Adicinar item</Link></li>
               {/* <li><Link to="/editar-item">Editar um item</Link></li> */}
             </ul>
           )}
@@ -51,18 +51,18 @@ const NavMenu = () => {
           Categorias
           {showCategorias && (
             <ul className="dropdown">
-              <li><Link to="/categorias">Ver categorias</Link></li>
-              <li><Link to="/cadastro-categoria">Cadastrar uma categoria</Link></li>
+              <li><Link to="/categorias">Minhas categorias</Link></li>
+              <li><Link to="/cadastro-categoria">Adicionar categoria</Link></li>
               {/* <li><Link to="/editar-categoria">Editar uma categoria</Link></li> */}
             </ul>
           )}
         </li>
         <li className="menu-item" onMouseEnter={() => setShowUsuarios(true)} onMouseLeave={() => setShowUsuarios(false)}>
-          Usuários
+          Minha conta
           {showUsuarios && (
             <ul className="dropdown">
-              <li><Link to="/usuarios">Ver usuários</Link></li>
-              <li><Link to="/cadastro-usuario">Cadastrar um usuário</Link></li>
+              <li><Link to="/usuarios"> Meu perfil</Link></li>
+              <li><Link to="/cadastro-usuario">Cadastrar novo usuário</Link></li>
               {/* <li><Link to="/editar-usuario">Editar um usuário</Link></li> */}
             </ul>
           )}
