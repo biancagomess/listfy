@@ -48,11 +48,15 @@ const Login = () => {
                         >
                             Voltar
                         </button> */}
-
                     </div>
-
                 </form>
-                <span>Não possui conta - Registre-se</span>
+                <span
+                    className="register-link"
+                    onClick={() => navigate('/register')}
+                    style={{cursor: 'pointer', color: 'black', fontSize: '15px'}}
+                >
+                    Não possui conta? Registre-se
+                </span>
             </div>
         </div >
     );
