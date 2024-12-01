@@ -33,7 +33,7 @@ const NavMenu = () => {
             <ul className="dropdown">
               <li><Link to="/listas">Ver listas</Link></li>
               <li><Link to="/cadastro-lista">Cadastrar uma lista</Link></li>
-              <li><Link to="/editar-lista">Editar a lista</Link></li>
+              {/* <li><Link to="/editar-lista">Editar a lista</Link></li> */}
             </ul>
           )}
         </li>
@@ -41,9 +41,9 @@ const NavMenu = () => {
           Itens
           {showItens && (
             <ul className="dropdown">
-              <li><Link to="/itens">Ver itens</Link></li>
+              <li><Link to="/items/">Ver itens</Link></li>
               <li><Link to="/cadastro-item">Cadastrar um item</Link></li>
-              <li><Link to="/editar-item">Editar um item</Link></li>
+              {/* <li><Link to="/editar-item">Editar um item</Link></li> */}
             </ul>
           )}
         </li>
@@ -53,7 +53,7 @@ const NavMenu = () => {
             <ul className="dropdown">
               <li><Link to="/categorias">Ver categorias</Link></li>
               <li><Link to="/cadastro-categoria">Cadastrar uma categoria</Link></li>
-              <li><Link to="/editar-categoria">Editar uma categoria</Link></li>
+              {/* <li><Link to="/editar-categoria">Editar uma categoria</Link></li> */}
             </ul>
           )}
         </li>
@@ -63,7 +63,7 @@ const NavMenu = () => {
             <ul className="dropdown">
               <li><Link to="/usuarios">Ver usuários</Link></li>
               <li><Link to="/cadastro-usuario">Cadastrar um usuário</Link></li>
-              <li><Link to="/editar-usuario">Editar um usuário</Link></li>
+              {/* <li><Link to="/editar-usuario">Editar um usuário</Link></li> */}
             </ul>
           )}
         </li>

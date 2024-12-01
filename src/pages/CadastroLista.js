@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import api from '../services/api';
 import './CadastroLista.css';
 
+
 const CadastroLista = () => {
   const [nome, setNome] = useState('');
 
@@ -18,23 +19,24 @@ const CadastroLista = () => {
   };
 
   return (
-    <div className="container">
-      <div className='box'>
-      <h2>Cadastrar Lista</h2>
+    <div className='initial'>
+      <div className="container">
+        <div className='box'>
+          <h2>Cadastrar Lista</h2>
+          <form onSubmit={handleSubmit} id="grocery">
+
+            <input
+              type="text"
+              value={nome}
+              onChange={(e) => setNome(e.target.value)}
+              required
+              id="writelist"
+              placeholder="Digite o nome da Lista"
+            />
+            <button type="submit">Cadastrar</button>
+          </form>
+        </div>
       </div>
-      <form onSubmit={handleSubmit} id="grocery">
-        <label>
-          Nome da Lista:
-          <input
-            type="text"
-            value={nome}
-            onChange={(e) => setNome(e.target.value)}
-            required
-            id="writelist"
-          />
-        </label>
-        <button type="submit">Cadastrar</button>
-      </form>
     </div>
   );
 };

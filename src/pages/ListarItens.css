@@ -36,3 +36,9 @@
 .concluir-btn:hover {
     background-color: #218838;
 }
+
+.concluido {
+    text-decoration: line-through;
+    color: gray;
+}
+

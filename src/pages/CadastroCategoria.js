@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import api from '../services/api';
+import './CadastroCategoria.css';
 
 const CadastroCategoria = () => {
   const [nome, setNome] = useState('');
@@ -17,13 +18,17 @@ const CadastroCategoria = () => {
   };
 
   return (
-    <>
-      <h1>Cadastrar Categoria</h1>
-      <form onSubmit={handleCadastro}>
-        <input type="text" placeholder="Nome da categoria" value={nome} onChange={(e) => setNome(e.target.value)} />
-        <button type="submit">Cadastrar</button>
-      </form>
-    </>
+    <div className='initial-category'>
+      <div className="container-category">
+        <div className='box-category'>
+          <h1>Cadastrar Categoria</h1>
+          <form onSubmit={handleCadastro} id="category">
+            <input type="text" placeholder="Digite uma categoria" value={nome} onChange={(e) => setNome(e.target.value) } id="writeCategory" />
+            <button type="submit">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
   );
 };
 
