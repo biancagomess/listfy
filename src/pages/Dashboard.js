@@ -20,7 +20,7 @@ const Dashboard = () => {
     <div className="dashboard-container"> 
       <h1>Bem-vindo ao Listfy</h1>
       {user && <div className="user-info">Usuário: {user.name}</div>}
-      <h2>Listas Cadastradas</h2>
+      <h2>Suas Listas:</h2>
       <Listas /> 
     </div>
   );

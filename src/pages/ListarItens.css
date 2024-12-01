@@ -1,0 +1,38 @@
+.listar-itens-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.itens-list {
+    list-style: none;
+    padding: 0;
+}
+
+.itens-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itens-list li.concluido {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.concluir-btn {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.concluir-btn:hover {
+    background-color: #218838;
+}

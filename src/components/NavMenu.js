@@ -15,11 +15,17 @@ const NavMenu = () => {
     navigate('/');
   };
 
+ 
   return (
     <nav className="navmenu">
       <ul className="navmenu-items">
         <li className="menu-item project-name">
-          <Link to="/dashboard" style={{ color: '#fff', fontSize: '20px', fontWeight: 'bold' }}>Listfy</Link>
+          <img
+            src='/shopping-cart.png'
+            alt="Carrinho de compras"
+            className="cart-icon"
+          />
+          <Link to="/dashboard" className="listfy">LISTFY</Link>
         </li>
         <li className="menu-item" onMouseEnter={() => setShowListas(true)} onMouseLeave={() => setShowListas(false)}>
           Listas
@@ -62,7 +68,14 @@ const NavMenu = () => {
           )}
         </li>
         <li className="menu-item logout">
-          <button onClick={handleLogout}>Logout</button>
+          <button onClick={handleLogout}>
+            <img
+              src="./logout.png"
+              alt="Logout"
+              className="logout-icon"
+              title="Logout"
+            />
+          </button>
         </li>
       </ul>
     </nav>

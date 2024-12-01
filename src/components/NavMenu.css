@@ -1,69 +1,110 @@
 .navmenu {
+  font-family: 'Poppins', sans-serif;
   background-color: #426B1F;
   color: #fff;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navmenu-items {
   display: flex;
   align-items: center;
   width: 100%;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu-item .cart-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+}
+
+.listfy {
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  letter-spacing: 4px;
+  color: white;
 }
 
 .menu-item {
   position: relative;
-  display: inline-block;
-  padding: 10px;
+  padding: 5px 15px;
   cursor: pointer;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
 }
 
 .menu-item:hover {
-  background-color: #6BAF3F;
+  background-color: #5E9344;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease, font-size 0.3s ease;
 }
 
 .dropdown {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: rgba(107, 175, 63, 1.0); 
+  background-color: #5E9344;
   border: 1px solid #444;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
-  min-width: 150px;
+  min-width: 180px;
+  padding: 5px 0;
+  z-index: 10;
+  border-radius: 5px;
 }
 
 .dropdown li {
-  padding: 10px;
+  padding: 10px 15px;
   list-style: none;
+  text-align: left;
+  transition: background-color 0.3s ease;
 }
 
 .dropdown li:hover {
-  background-color: rgb(107, 175, 63); 
+  background-color: #426B1F;
 }
+
 .dropdown a {
   text-decoration: none;
   color: #fff;
 }
 
-.dropdown a:hover {
-  color: #023a07;
-}
 
 .logout {
-  margin-left: auto; 
+  margin-left: auto;
 }
 
 .logout button {
-  background-color: #6BAF3F;
-  color: #fff;
+  background: none;
   border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
+  padding: 0;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.logout button:hover {
-  background-color: #6BAF3F;
+.logout-icon {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.3s ease;
+}
+
+.logout-icon:hover {
+  transform: scale(1.1);
 }

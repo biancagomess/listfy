@@ -1,0 +1,78 @@
+body{
+    background-color: #f4f4f4;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #273523;
+    letter-spacing: 3px;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 9999px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: #426b1f;
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 6px;
+    border-radius: 9999px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login-container button:hover {
+    background-color: #365315;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.cancel-button {
+    background-color: #50c5b7; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cancel-button:hover {
+    background-color: #50c5b7 !important;
+}

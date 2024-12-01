@@ -1,0 +1,58 @@
+.body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 81.3vh;
+    margin: 0;
+}
+
+.register-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.register-container h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #273523;
+    letter-spacing: 3px;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 9999px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.register-container button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: #426b1f;
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 6px;
+    border-radius: 9999px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.register-container button:hover {
+    background-color: #365315;
+}

@@ -18,7 +18,7 @@ const CadastroCategoria = () => {
 
   return (
     <>
-         <h1>Cadastrar Categoria</h1>
+      <h1>Cadastrar Categoria</h1>
       <form onSubmit={handleCadastro}>
         <input type="text" placeholder="Nome da categoria" value={nome} onChange={(e) => setNome(e.target.value)} />
         <button type="submit">Cadastrar</button>

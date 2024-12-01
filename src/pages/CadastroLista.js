@@ -18,9 +18,11 @@ const CadastroLista = () => {
   };
 
   return (
-    <div className="cadastro-lista">
+    <div className="container">
+      <div className='box'>
       <h2>Cadastrar Lista</h2>
-      <form onSubmit={handleSubmit}>
+      </div>
+      <form onSubmit={handleSubmit} id="grocery">
         <label>
           Nome da Lista:
           <input
@@ -28,6 +30,7 @@ const CadastroLista = () => {
             value={nome}
             onChange={(e) => setNome(e.target.value)}
             required
+            id="writelist"
           />
         </label>
         <button type="submit">Cadastrar</button>

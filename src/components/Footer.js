@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>Listafy &copy; 2024 - A sua melhor gestão de compras</p>
+      <p>Listfy &copy; 2024 - A sua melhor gestão de compras</p>
     </footer>
   );
 };
